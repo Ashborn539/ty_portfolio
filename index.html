@@ -10,529 +10,429 @@
 </head>
 <body>
 
-  <!-- CURSOR -->
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-dot" id="cursorDot"></div>
+<div class="glow-tr"></div>
+<div class="glow-bl"></div>
 
-  <!-- NOISE OVERLAY -->
-  <div class="noise"></div>
+<!-- Nav -->
+<nav>
+  <div class="nav-logo"><span>[</span>ashborn539<span>]</span></div>
+  <div class="nav-links">
+    <a href="#about">À propos</a>
+    <a href="#skills">Compétences</a>
+    <a href="#projects">Projets</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
-  <!-- NAV -->
-  <nav class="nav" id="nav">
-    <div class="nav-logo">
-      <span class="logo-bracket">[</span>ashborn539<span class="logo-bracket">]</span>
+<!-- Hero -->
+<section id="hero">
+  <div>
+    <div class="hero-badge fade-in fade-in-1">
+      <span class="hero-badge-dot"></span>
+      <span>Étudiant MIASHS — 2ème année</span>
     </div>
-    <ul class="nav-links">
-      <li><a href="#about" class="nav-link">À propos</a></li>
-      <li><a href="#skills" class="nav-link">Compétences</a></li>
-      <li><a href="#projects" class="nav-link">Projets</a></li>
-      <li><a href="#contact" class="nav-link">Contact</a></li>
-    </ul>
-    <button class="nav-toggle" id="navToggle" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
-
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu" id="mobileMenu">
-    <ul>
-      <li><a href="#about" class="mobile-link">À propos</a></li>
-      <li><a href="#skills" class="mobile-link">Compétences</a></li>
-      <li><a href="#projects" class="mobile-link">Projets</a></li>
-      <li><a href="#contact" class="mobile-link">Contact</a></li>
-    </ul>
+    <h1 class="hero-h1 fade-in fade-in-2">
+      Tylden<br>Hounsa<span class="dot">.</span>
+    </h1>
+    <p class="hero-sub fade-in fade-in-3">
+      Mathématiques et Informatique Appliquées aux Sciences Humaines &amp; Sociales<br>
+      <span class="arrow">→ Data Analyst &amp; Data Engineer en devenir</span>
+    </p>
+    <p class="hero-desc fade-in fade-in-4">
+      Je transforme les données en décisions. Curieux, rigoureux, passionné par l'intersection des mathématiques, du code et de l'analyse — je construis aujourd'hui les compétences qui feront de moi le data professionnel de demain.
+    </p>
+    <div class="hero-btns fade-in fade-in-5">
+      <a href="#projects" class="btn-primary">Voir mes projets</a>
+      <a href="#contact" class="btn-secondary">Me contacter</a>
+    </div>
   </div>
 
-  <!-- HERO -->
-  <section class="hero" id="hero">
-    <div class="hero-bg">
-      <div class="grid-lines"></div>
-      <div class="glow glow-1"></div>
-      <div class="glow glow-2"></div>
+  <!-- Terminal -->
+  <div class="terminal fade-in fade-in-terminal">
+    <div class="terminal-bar">
+      <span class="dot-red"></span>
+      <span class="dot-yellow"></span>
+      <span class="dot-green"></span>
+      <span class="terminal-label">ashborn539 ~ terminal</span>
     </div>
-    <div class="hero-content">
-      <div class="hero-badge">
-        <span class="badge-dot"></span>
-        <span>Étudiant MIASHS — 2ème année</span>
-      </div>
-      <h1 class="hero-title">
-        <span class="title-line reveal-line">Tylden</span>
-        <span class="title-line reveal-line delay-1">Hounsa<span class="title-accent">.</span></span>
-      </h1>
-      <p class="hero-subtitle reveal-fade delay-2">
-        Mathématiques et Informatique Appliquées aux Sciences Humaines &amp; Sociales<br/>
-        <span class="hero-sub-accent">→ Data Analyst &amp; Data Engineer en devenir</span>
-      </p>
-      <p class="hero-tagline reveal-fade delay-3">
-        Je transforme les données en décisions. Curieux, rigoureux, passionné par l'intersection des
-        mathématiques, du code et de l'analyse — je construis aujourd'hui les compétences qui feront
-        de moi le data professionnel de demain.
-      </p>
-      <div class="hero-cta reveal-fade delay-4">
-        <a href="#projects" class="btn btn-primary">Voir mes projets</a>
-        <a href="#contact" class="btn btn-ghost">Me contacter</a>
-      </div>
+    <div class="terminal-body">
+      <p><span class="prompt">$</span><span class="cmd">whoami</span></p>
+      <p class="out">Tylden Hounsa — Étudiant Data</p>
+      <p><span class="prompt">$</span><span class="cmd">cat skills.txt</span></p>
+      <p class="out">Python | SQL | R | Java</p>
+      <p class="out">HTML/CSS | ggplot2 | Tableau</p>
+      <p><span class="prompt">$</span><span class="cmd">echo $OBJECTIVE</span></p>
+      <p class="out">Data Analyst / Data Engineer</p>
+      <p><span class="prompt">$</span><span class="cmd">./run_portfolio.sh<span class="cursor">_</span></span></p>
     </div>
-    <div class="hero-terminal reveal-fade delay-3">
-      <div class="terminal-header">
-        <span class="t-dot red"></span>
-        <span class="t-dot yellow"></span>
-        <span class="t-dot green"></span>
-        <span class="t-label">ashborn539 ~ terminal</span>
-      </div>
-      <div class="terminal-body" id="terminalBody">
-        <p><span class="t-prompt">$</span> <span class="t-cmd">whoami</span></p>
-        <p class="t-out">Tylden Hounsa — Étudiant Data</p>
-        <p><span class="t-prompt">$</span> <span class="t-cmd">cat skills.txt</span></p>
-        <p class="t-out">Python | SQL | R | Java</p>
-        <p class="t-out">HTML/CSS | ggplot2 | Tableau</p>
-        <p><span class="t-prompt">$</span> <span class="t-cmd">echo $OBJECTIVE</span></p>
-        <p class="t-out">Data Analyst / Data Engineer</p>
-        <p><span class="t-prompt">$</span> <span class="t-cmd">./run_portfolio.sh<span class="blink">_</span></span></p>
-      </div>
-    </div>
-    <div class="scroll-indicator">
-      <div class="scroll-line"></div>
-      <span>Scroll</span>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ABOUT -->
-  <section class="section about" id="about">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-number">01</span>
-        <h2 class="section-title">À propos</h2>
-        <div class="section-line"></div>
+<!-- About -->
+<section id="about">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">01</span>
+      <h2>À propos</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>Étudiant en 2ème année de <span class="hl">MIASHS</span> (Mathématiques et Informatique Appliquées aux Sciences Humaines et Sociales), je me situe à la croisée des maths, de la statistique et de l'informatique — un terrain idéal pour construire une carrière dans la data.</p>
+        <p>Mon parcours m'a confronté à des projets concrets : simulation d'écosystèmes, machine learning avec des données réelles, analyse de corrélations mondiales... Chaque projet a renforcé ma conviction : les données bien traitées racontent des histoires puissantes.</p>
+        <p>Mon objectif est clair — devenir <span class="hl">Data Analyst</span> ou <span class="hl">Data Engineer</span>, en maîtrisant aussi bien la modélisation statistique que les pipelines de données. Je suis encore en construction, et c'est exactement ce qui me motive.</p>
+        <div class="stats">
+          <div>
+            <div class="stat-num">4</div>
+            <div class="stat-label">Projets réalisés</div>
+          </div>
+          <div>
+            <div class="stat-num">5+</div>
+            <div class="stat-label">Langages appris</div>
+          </div>
+          <div>
+            <div class="stat-num">2</div>
+            <div class="stat-label">Années de formation</div>
+          </div>
+        </div>
       </div>
-      <div class="about-grid">
-        <div class="about-text">
-          <p class="about-lead">
-            Étudiant en 2ème année de <strong>MIASHS</strong> (Mathématiques et Informatique Appliquées aux Sciences Humaines et Sociales), je me situe à la croisée des maths, de la statistique et de l'informatique — un terrain idéal pour construire une carrière dans la data.
-          </p>
-          <p>
-            Mon parcours m'a confronté à des projets concrets : simulation d'écosystèmes, machine learning avec des données réelles, analyse de corrélations mondiales... Chaque projet a renforcé ma conviction : les données bien traitées racontent des histoires puissantes.
-          </p>
-          <p>
-            Mon objectif est clair — devenir <strong>Data Analyst</strong> ou <strong>Data Engineer</strong>, en maîtrisant aussi bien la modélisation statistique que les pipelines de données. Je suis encore en construction, et c'est exactement ce qui me motive.
-          </p>
-          <div class="about-stats">
-            <div class="stat">
-              <span class="stat-number">4</span>
-              <span class="stat-label">Projets réalisés</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">5+</span>
-              <span class="stat-label">Langages appris</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">2</span>
-              <span class="stat-label">Années de formation</span>
-            </div>
+      <div class="info-card reveal">
+        <div class="info-row">
+          <div class="info-icon">🎓</div>
+          <div>
+            <div class="info-label">Formation</div>
+            <div class="info-value">MASS — Licence</div>
           </div>
         </div>
-        <div class="about-card">
-          <div class="info-card">
-            <div class="info-row">
-              <span class="info-icon">🎓</span>
-              <div>
-                <span class="info-label">Formation</span>
-                <span class="info-val">MASS — Licence</span>
-              </div>
-            </div>
-            <div class="info-row">
-              <span class="info-icon">📍</span>
-              <div>
-                <span class="info-label">Localisation</span>
-                <span class="info-val">France</span>
-              </div>
-            </div>
-            <div class="info-row">
-              <span class="info-icon">🎯</span>
-              <div>
-                <span class="info-label">Objectif</span>
-                <span class="info-val">Data Analyst / Engineer</span>
-              </div>
-            </div>
-            <div class="info-row">
-              <span class="info-icon">📧</span>
-              <div>
-                <span class="info-label">Email</span>
-                <span class="info-val">tyldenhounsa@gmail.com</span>
-              </div>
-            </div>
-            <div class="info-row">
-              <span class="info-icon">🔗</span>
-              <div>
-                <span class="info-label">GitHub</span>
-                <span class="info-val">Ashborn539</span>
-              </div>
-            </div>
-            <a href="cv-tylden-hounsa.pdf" download class="btn btn-primary btn-sm" style="margin-top:1.5rem;width:100%;text-align:center;">
-              ↓ Télécharger mon CV
-            </a>
+        <div class="info-row">
+          <div class="info-icon">📍</div>
+          <div>
+            <div class="info-label">Localisation</div>
+            <div class="info-value">France</div>
           </div>
         </div>
+        <div class="info-row">
+          <div class="info-icon">🎯</div>
+          <div>
+            <div class="info-label">Objectif</div>
+            <div class="info-value">Data Analyst / Engineer</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon">📧</div>
+          <div>
+            <div class="info-label">Email</div>
+            <div class="info-value">tyldenhounsa@gmail.com</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon">🔗</div>
+          <div>
+            <div class="info-label">GitHub</div>
+            <div class="info-value">Ashborn539</div>
+          </div>
+        </div>
+        <a href="cv-tylden-hounsa.pdf" download class="btn-cv">
+          ↓ Télécharger mon CV
+        </a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- SKILLS -->
-  <section class="section skills" id="skills">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-number">02</span>
-        <h2 class="section-title">Compétences</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="skills-grid">
-
-        <div class="skill-category">
-          <h3 class="skill-cat-title"><span class="cat-icon">⌨️</span> Langages</h3>
-          <div class="skill-items">
-            <div class="skill-item">
-              <div class="skill-top"><span>Python</span><span class="skill-level">Intermédiaire</span></div>
-              <div class="skill-bar"><div class="skill-fill" style="--w:60%"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-top"><span>SQL</span><span class="skill-level">Intermédiaire</span></div>
-              <div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-top"><span>R</span><span class="skill-level">Intermédiaire</span></div>
-              <div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-top"><span>Java</span><span class="skill-level">Notions</span></div>
-              <div class="skill-bar"><div class="skill-fill" style="--w:40%"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-top"><span>HTML / CSS</span><span class="skill-level">Notions</span></div>
-              <div class="skill-bar"><div class="skill-fill" style="--w:45%"></div></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3 class="skill-cat-title"><span class="cat-icon">📊</span> Analyse & Visualisation</h3>
-          <div class="skill-items">
-            <div class="skill-item">
-              <div class="skill-top"><span>ggplot2 (R)</span><span class="skill-level">Intermédiaire</span></div>
-              <div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-top"><span>R Markdown</span><span class="skill-level">Intermédiaire</span></div>
-              <div class="skill-bar"><div class="skill-fill" style="--w:60%"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-top"><span>Tableau</span><span class="skill-level">Notions</span></div>
-              <div class="skill-bar"><div class="skill-fill" style="--w:45%"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-top"><span>Excel</span><span class="skill-level">Intermédiaire</span></div>
-              <div class="skill-bar"><div class="skill-fill" style="--w:60%"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-top"><span>pandas / matplotlib</span><span class="skill-level">En cours d'apprentissage</span></div>
-              <div class="skill-bar"><div class="skill-fill learning" style="--w:20%"></div></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3 class="skill-cat-title"><span class="cat-icon">🤖</span> Machine Learning & BDD</h3>
-          <div class="skill-items">
-            <div class="skill-item">
-              <div class="skill-top"><span>Orange Data Mining</span><span class="skill-level">Intermédiaire</span></div>
-              <div class="skill-bar"><div class="skill-fill" style="--w:60%"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-top"><span>Apprentissage supervisé</span><span class="skill-level">Notions</span></div>
-              <div class="skill-bar"><div class="skill-fill" style="--w:45%"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-top"><span>Apprentissage non supervisé</span><span class="skill-level">Notions</span></div>
-              <div class="skill-bar"><div class="skill-fill" style="--w:40%"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-top"><span>WAMP / MySQL</span><span class="skill-level">Intermédiaire</span></div>
-              <div class="skill-bar"><div class="skill-fill" style="--w:55%"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-top"><span>RStudio</span><span class="skill-level">Intermédiaire</span></div>
-              <div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3 class="skill-cat-title"><span class="cat-icon">🛠️</span> Outils & Environnements</h3>
-          <div class="skill-tags">
-            <span class="tag">Git & GitHub</span>
-            <span class="tag">RStudio</span>
-            <span class="tag">WAMP</span>
-            <span class="tag">VS Code</span>
-            <span class="tag">Orange DM</span>
-            <span class="tag">Tableau</span>
-            <span class="tag">Excel</span>
-            <span class="tag">TCP/IP</span>
-            <span class="tag">R Markdown</span>
-          </div>
-        </div>
-
-      </div>
+<!-- Skills -->
+<section id="skills">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">02</span>
+      <h2>Compétences</h2>
+      <div class="section-divider"></div>
     </div>
-  </section>
+    <div class="skills-grid">
 
-  <!-- PROJECTS -->
-  <section class="section projects" id="projects">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-number">03</span>
-        <h2 class="section-title">Projets</h2>
-        <div class="section-line"></div>
+      <div class="skill-card reveal">
+        <h3><span>⌨️</span> Langages</h3>
+        <div class="skill-row"><span class="skill-name">Python</span><span class="skill-level">Intermédiaire</span></div>
+        <div class="skill-row"><span class="skill-name">SQL</span><span class="skill-level">Intermédiaire</span></div>
+        <div class="skill-row"><span class="skill-name">R</span><span class="skill-level">Intermédiaire</span></div>
+        <div class="skill-row"><span class="skill-name">Java</span><span class="skill-level">Notions</span></div>
+        <div class="skill-row"><span class="skill-name">HTML / CSS</span><span class="skill-level">Notions</span></div>
       </div>
-      <div class="projects-grid">
 
-        <!-- Project 1 -->
-        <div class="project-card featured">
-          <div class="project-meta">
-            <span class="project-tag">Python · SQL · R</span>
-            <span class="project-year">2024</span>
-          </div>
-          <div class="project-number">01</div>
-          <h3 class="project-title">Mortalité & Pollution aux Particules Fines</h3>
-          <p class="project-desc">
-            Étude statistique de la corrélation entre le taux de mortalité mondial et le niveau de particules fines (PM2.5) par pays. Collecte, nettoyage et modélisation des données, visualisations avancées et rédaction d'un rapport scientifique complet.
-          </p>
-          <div class="project-highlights">
-            <span>📊 Analyse de corrélation mondiale</span>
-            <span>🗄️ Base de données relationnelle SQL</span>
-            <span>📄 Rapport R Markdown complet</span>
-          </div>
-          <div class="project-stack">
-            <span class="stack-pill">R</span>
-            <span class="stack-pill">ggplot2</span>
-            <span class="stack-pill">SQL</span>
-            <span class="stack-pill">WAMP</span>
-            <span class="stack-pill">R Markdown</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/Ashborn539" target="_blank" class="proj-link">GitHub →</a>
-          </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project-card">
-          <div class="project-meta">
-            <span class="project-tag">Python · Java · Réseau</span>
-            <span class="project-year">2024</span>
-          </div>
-          <div class="project-number">02</div>
-          <h3 class="project-title">Simulation Proie–Prédateur</h3>
-          <p class="project-desc">
-            Modélisation d'un écosystème avec loups et moutons : la logique de simulation en Python communique en temps réel avec une interface graphique Java via une connexion TCP client-serveur en localhost.
-          </p>
-          <div class="project-highlights">
-            <span>🐺 Modèle de Lotka-Volterra</span>
-            <span>🔌 Architecture client-serveur TCP</span>
-            <span>🖥️ Double langage Python/Java</span>
-          </div>
-          <div class="project-stack">
-            <span class="stack-pill">Python</span>
-            <span class="stack-pill">Java</span>
-            <span class="stack-pill">TCP/IP</span>
-            <span class="stack-pill">Sockets</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/Ashborn539" target="_blank" class="proj-link">GitHub →</a>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-card">
-          <div class="project-meta">
-            <span class="project-tag">Machine Learning · Orange</span>
-            <span class="project-year">2024</span>
-          </div>
-          <div class="project-number">03</div>
-          <h3 class="project-title">Projet Machine Learning — Orange</h3>
-          <p class="project-desc">
-            Projet en partenariat avec Orange : exploration d'un jeu de données réel avec des méthodes d'apprentissage supervisé (classification, régression) et non supervisé (clustering). Comparaison de modèles et interprétation des résultats.
-          </p>
-          <div class="project-highlights">
-            <span>🤖 Classification & régression</span>
-            <span>🔍 Clustering & segmentation</span>
-            <span>📈 Évaluation & comparaison de modèles</span>
-          </div>
-          <div class="project-stack">
-            <span class="stack-pill">Orange DM</span>
-            <span class="stack-pill">ML supervisé</span>
-            <span class="stack-pill">ML non supervisé</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/Ashborn539" target="_blank" class="proj-link">GitHub →</a>
-          </div>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="project-card">
-          <div class="project-meta">
-            <span class="project-tag">Python · Terminal</span>
-            <span class="project-year">2023</span>
-          </div>
-          <div class="project-number">04</div>
-          <h3 class="project-title">Bomberman — Version Terminale</h3>
-          <p class="project-desc">
-            Recréation du jeu classique Bomberman entièrement en ligne de commande en Python. Premier grand projet de programmation, réalisé en débutant — une base solide pour comprendre les structures de données, la logique de jeu et la gestion d'états.
-          </p>
-          <div class="project-highlights">
-            <span>🎮 Logique de jeu complète</span>
-            <span>🗺️ Gestion de grille & collisions</span>
-            <span>💥 Mécanique d'explosions</span>
-          </div>
-          <div class="project-stack">
-            <span class="stack-pill">Python</span>
-            <span class="stack-pill">Terminal</span>
-            <span class="stack-pill">Algorithmes</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/Ashborn539" target="_blank" class="proj-link">GitHub →</a>
-          </div>
-        </div>
-
+      <div class="skill-card reveal">
+        <h3><span>📊</span> Analyse &amp; Visualisation</h3>
+        <div class="skill-row"><span class="skill-name">ggplot2 (R)</span><span class="skill-level">Intermédiaire</span></div>
+        <div class="skill-row"><span class="skill-name">R Markdown</span><span class="skill-level">Intermédiaire</span></div>
+        <div class="skill-row"><span class="skill-name">Tableau</span><span class="skill-level">Notions</span></div>
+        <div class="skill-row"><span class="skill-name">Excel</span><span class="skill-level">Intermédiaire</span></div>
+        <div class="skill-row"><span class="skill-name">pandas / matplotlib</span><span class="skill-level">En cours d'apprentissage</span></div>
       </div>
+
+      <div class="skill-card reveal">
+        <h3><span>🤖</span> Machine Learning &amp; BDD</h3>
+        <div class="skill-row"><span class="skill-name">Orange Data Mining</span><span class="skill-level">Intermédiaire</span></div>
+        <div class="skill-row"><span class="skill-name">Apprentissage supervisé</span><span class="skill-level">Notions</span></div>
+        <div class="skill-row"><span class="skill-name">Apprentissage non supervisé</span><span class="skill-level">Notions</span></div>
+        <div class="skill-row"><span class="skill-name">WAMP / MySQL</span><span class="skill-level">Intermédiaire</span></div>
+        <div class="skill-row"><span class="skill-name">RStudio</span><span class="skill-level">Intermédiaire</span></div>
+      </div>
+
+      <div class="skill-card reveal">
+        <h3><span>🛠️</span> Outils &amp; Environnements</h3>
+        <div class="tools-wrap">
+          <span class="tool-badge">Git &amp; GitHub</span>
+          <span class="tool-badge">RStudio</span>
+          <span class="tool-badge">WAMP</span>
+          <span class="tool-badge">VS Code</span>
+          <span class="tool-badge">Orange DM</span>
+          <span class="tool-badge">Tableau</span>
+          <span class="tool-badge">Excel</span>
+          <span class="tool-badge">TCP/IP</span>
+          <span class="tool-badge">R Markdown</span>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ROADMAP -->
-  <section class="section roadmap" id="roadmap">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-number">04</span>
-        <h2 class="section-title">Ma Roadmap</h2>
-        <div class="section-line"></div>
+<!-- Projects -->
+<section id="projects">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">03</span>
+      <h2>Projets</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="projects-grid">
+
+      <!-- Project 01 — featured -->
+      <div class="project-card featured reveal">
+        <div class="project-top">
+          <span class="project-tag">Python · SQL · R</span>
+          <span class="project-year">2024</span>
+        </div>
+        <div class="project-num">01</div>
+        <h3 class="project-title">Mortalité &amp; Pollution aux Particules Fines</h3>
+        <p class="project-desc">Étude statistique de la corrélation entre le taux de mortalité mondial et le niveau de particules fines (PM2.5) par pays. Collecte, nettoyage et modélisation des données, visualisations avancées et rédaction d'un rapport scientifique complet.</p>
+        <div class="project-highlights">
+          <span>📊 Analyse de corrélation mondiale</span>
+          <span>🗄️ Base de données relationnelle SQL</span>
+          <span>📄 Rapport R Markdown complet</span>
+        </div>
+        <div class="project-stack">
+          <span class="stack-badge">R</span>
+          <span class="stack-badge">ggplot2</span>
+          <span class="stack-badge">SQL</span>
+          <span class="stack-badge">WAMP</span>
+          <span class="stack-badge">R Markdown</span>
+        </div>
+        <a href="https://github.com/Ashborn539" target="_blank" rel="noopener noreferrer" class="project-link">GitHub ›</a>
       </div>
-      <p class="roadmap-intro">Ce que j'apprends, ce que je maîtrise, ce qui m'attend.</p>
-      <div class="timeline">
-        <div class="timeline-item done">
-          <div class="tl-marker"><span>✓</span></div>
-          <div class="tl-content">
-            <h4>Fondamentaux de la programmation</h4>
-            <p>Python, Java, SQL, HTML/CSS — bases solides posées</p>
-          </div>
+
+      <!-- Project 02 -->
+      <div class="project-card reveal">
+        <div class="project-top">
+          <span class="project-tag">Python · Java · Réseau</span>
+          <span class="project-year">2024</span>
         </div>
-        <div class="timeline-item done">
-          <div class="tl-marker"><span>✓</span></div>
-          <div class="tl-content">
-            <h4>Statistiques & Analyse de données</h4>
-            <p>R, ggplot2, R Markdown, bases de données relationnelles</p>
-          </div>
+        <div class="project-num">02</div>
+        <h3 class="project-title">Simulation Proie–Prédateur</h3>
+        <p class="project-desc">Modélisation d'un écosystème avec loups et moutons : la logique de simulation en Python communique en temps réel avec une interface graphique Java via une connexion TCP client-serveur en localhost.</p>
+        <div class="project-highlights">
+          <span>🐺 Modèle de Lotka-Volterra</span>
+          <span>🔌 Architecture client-serveur TCP</span>
+          <span>🖥️ Double langage Python/Java</span>
         </div>
-        <div class="timeline-item done">
-          <div class="tl-marker"><span>✓</span></div>
-          <div class="tl-content">
-            <h4>Introduction au Machine Learning</h4>
-            <p>Apprentissage supervisé & non supervisé avec Orange Data Mining</p>
-          </div>
+        <div class="project-stack">
+          <span class="stack-badge">Python</span>
+          <span class="stack-badge">Java</span>
+          <span class="stack-badge">TCP/IP</span>
+          <span class="stack-badge">Sockets</span>
         </div>
-        <div class="timeline-item current">
-          <div class="tl-marker"><span>→</span></div>
-          <div class="tl-content">
-            <h4>Python Data Science Stack</h4>
-            <p>pandas, matplotlib, numpy, scikit-learn — en cours d'apprentissage</p>
-          </div>
+        <a href="https://github.com/Ashborn539" target="_blank" rel="noopener noreferrer" class="project-link">GitHub ›</a>
+      </div>
+
+      <!-- Project 03 -->
+      <div class="project-card reveal">
+        <div class="project-top">
+          <span class="project-tag">Machine Learning · Orange</span>
+          <span class="project-year">2024</span>
         </div>
-        <div class="timeline-item upcoming">
-          <div class="tl-marker"><span>◦</span></div>
-          <div class="tl-content">
-            <h4>Data Engineering</h4>
-            <p>Pipelines ETL, Apache Spark, bases de données NoSQL, cloud (AWS/GCP)</p>
-          </div>
+        <div class="project-num">03</div>
+        <h3 class="project-title">Projet Machine Learning — Orange</h3>
+        <p class="project-desc">Projet en partenariat avec Orange : exploration d'un jeu de données réel avec des méthodes d'apprentissage supervisé (classification, régression) et non supervisé (clustering). Comparaison de modèles et interprétation des résultats.</p>
+        <div class="project-highlights">
+          <span>🤖 Classification &amp; régression</span>
+          <span>🔍 Clustering &amp; segmentation</span>
+          <span>📈 Évaluation &amp; comparaison de modèles</span>
         </div>
-        <div class="timeline-item upcoming">
-          <div class="tl-marker"><span>◦</span></div>
-          <div class="tl-content">
-            <h4>Visualisation avancée & Reporting</h4>
-            <p>Power BI, Tableau avancé, Plotly / Dash, storytelling par les données</p>
+        <div class="project-stack">
+          <span class="stack-badge">Orange DM</span>
+          <span class="stack-badge">ML supervisé</span>
+          <span class="stack-badge">ML non supervisé</span>
+        </div>
+        <a href="https://github.com/Ashborn539" target="_blank" rel="noopener noreferrer" class="project-link">GitHub ›</a>
+      </div>
+
+      <!-- Project 04 -->
+      <div class="project-card reveal">
+        <div class="project-top">
+          <span class="project-tag">Python · Terminal</span>
+          <span class="project-year">2023</span>
+        </div>
+        <div class="project-num">04</div>
+        <h3 class="project-title">Bomberman — Version Terminale</h3>
+        <p class="project-desc">Recréation du jeu classique Bomberman entièrement en ligne de commande en Python. Premier grand projet de programmation, réalisé en débutant — une base solide pour comprendre les structures de données, la logique de jeu et la gestion d'états.</p>
+        <div class="project-highlights">
+          <span>🎮 Logique de jeu complète</span>
+          <span>🗺️ Gestion de grille &amp; collisions</span>
+          <span>💥 Mécanique d'explosions</span>
+        </div>
+        <div class="project-stack">
+          <span class="stack-badge">Python</span>
+          <span class="stack-badge">Terminal</span>
+          <span class="stack-badge">Algorithmes</span>
+        </div>
+        <a href="https://github.com/Ashborn539" target="_blank" rel="noopener noreferrer" class="project-link">GitHub ›</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Roadmap -->
+<section id="roadmap">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">04</span>
+      <h2>Ma Roadmap</h2>
+      <div class="section-divider"></div>
+    </div>
+    <p class="roadmap-intro reveal">Ce que j'apprends, ce que je maîtrise, ce qui m'attend.</p>
+    <div class="roadmap-list">
+
+      <div class="roadmap-item reveal">
+        <div class="roadmap-dot done">✓</div>
+        <div class="roadmap-content">
+          <h4 class="done">Fondamentaux de la programmation</h4>
+          <p>Python, Java, SQL, HTML/CSS — bases solides posées</p>
+        </div>
+      </div>
+
+      <div class="roadmap-item reveal">
+        <div class="roadmap-dot done">✓</div>
+        <div class="roadmap-content">
+          <h4 class="done">Statistiques &amp; Analyse de données</h4>
+          <p>R, ggplot2, R Markdown, bases de données relationnelles</p>
+        </div>
+      </div>
+
+      <div class="roadmap-item reveal">
+        <div class="roadmap-dot done">✓</div>
+        <div class="roadmap-content">
+          <h4 class="done">Introduction au Machine Learning</h4>
+          <p>Apprentissage supervisé &amp; non supervisé avec Orange Data Mining</p>
+        </div>
+      </div>
+
+      <div class="roadmap-item reveal">
+        <div class="roadmap-dot current">→</div>
+        <div class="roadmap-content">
+          <h4 class="current">Python Data Science Stack</h4>
+          <p>pandas, matplotlib, numpy, scikit-learn — en cours d'apprentissage</p>
+        </div>
+      </div>
+
+      <div class="roadmap-item reveal">
+        <div class="roadmap-dot upcoming">◦</div>
+        <div class="roadmap-content">
+          <h4 class="upcoming">Data Engineering</h4>
+          <p>Pipelines ETL, Apache Spark, bases de données NoSQL, cloud (AWS/GCP)</p>
+        </div>
+      </div>
+
+      <div class="roadmap-item reveal">
+        <div class="roadmap-dot upcoming">◦</div>
+        <div class="roadmap-content">
+          <h4 class="upcoming">Visualisation avancée &amp; Reporting</h4>
+          <p>Power BI, Tableau avancé, Plotly / Dash, storytelling par les données</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">05</span>
+      <h2>Contact</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <p class="contact-intro">Ouvert à toute opportunité de stage, alternance, projet collaboratif ou simple échange autour de la data. N'hésitez pas à me contacter !</p>
+        <div class="contact-links">
+          <a href="mailto:tyldenhounsa@gmail.com" class="contact-link">
+            <div class="contact-link-icon">✉</div>
+            <div>
+              <div class="contact-link-label">Email</div>
+              <div class="contact-link-value">tyldenhounsa@gmail.com</div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/tylden-hounsa-b14559349/" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <div class="contact-link-icon">in</div>
+            <div>
+              <div class="contact-link-label">LinkedIn</div>
+              <div class="contact-link-value">Tylden Hounsa</div>
+            </div>
+          </a>
+          <a href="https://github.com/Ashborn539" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <div class="contact-link-icon">⌥</div>
+            <div>
+              <div class="contact-link-label">GitHub</div>
+              <div class="contact-link-value">Ashborn539</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="form">
+          <div class="form-group">
+            <label>Nom</label>
+            <input type="text" placeholder="Votre nom" />
           </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="votre@email.com" />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="5" placeholder="Votre message..."></textarea>
+          </div>
+          <button type="button" class="btn-send">Envoyer →</button>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- CONTACT -->
-  <section class="section contact" id="contact">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-number">05</span>
-        <h2 class="section-title">Contact</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="contact-wrapper">
-        <div class="contact-left">
-          <p class="contact-intro">
-            Ouvert à toute opportunité de stage, alternance, projet collaboratif ou simple échange autour de la data. N'hésitez pas à me contacter !
-          </p>
-          <div class="contact-links">
-            <a href="mailto:tyldenhounsa@gmail.com" class="contact-item">
-              <span class="contact-icon">✉</span>
-              <div>
-                <span class="contact-label">Email</span>
-                <span class="contact-val">tyldenhounsa@gmail.com</span>
-              </div>
-            </a>
-            <a href="https://www.linkedin.com/in/tylden-hounsa-b14559349/" target="_blank" class="contact-item">
-              <span class="contact-icon">in</span>
-              <div>
-                <span class="contact-label">LinkedIn</span>
-                <span class="contact-val">Tylden Hounsa</span>
-              </div>
-            </a>
-            <a href="https://github.com/Ashborn539" target="_blank" class="contact-item">
-              <span class="contact-icon">⌥</span>
-              <div>
-                <span class="contact-label">GitHub</span>
-                <span class="contact-val">Ashborn539</span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="contact-right">
-          <form class="contact-form" id="contactForm">
-            <div class="form-group">
-              <label for="name">Nom</label>
-              <input type="text" id="name" placeholder="Votre nom" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" placeholder="votre@email.com" required />
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" rows="5" placeholder="Votre message..." required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-full">Envoyer →</button>
-          </form>
-        </div>
-      </div>
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-logo"><span>[</span>ashborn539<span>]</span></span>
+    <p class="footer-copy">© 2025 Tylden Hounsa. Conçu avec rigueur &amp; ambition.</p>
+    <div class="footer-links">
+      <a href="https://github.com/Ashborn539" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/tylden-hounsa-b14559349/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </div>
-  </section>
+  </div>
+</footer>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        <span class="footer-logo"><span class="logo-bracket">[</span>ashborn539<span class="logo-bracket">]</span></span>
-        <p class="footer-copy">© 2025 Tylden Hounsa. Conçu avec rigueur & ambition.</p>
-        <div class="footer-links">
-          <a href="https://github.com/Ashborn539" target="_blank">GitHub</a>
-          <a href="https://www.linkedin.com/in/tylden-hounsa-b14559349/" target="_blank">LinkedIn</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+<script src=".\assets\js\script.js"></script>
 </body>
 </html>
